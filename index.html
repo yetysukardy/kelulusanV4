@@ -164,9 +164,10 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.
               <a href="${student["Link SKL"]}" target="_blank" class="block mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl text-center">
                 Download SKL
               </a>
+            
           </div>
-             ${isLulus ?
-            <button onclick="goBack()" class="mt-6 ${isLulus ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'} text-white px-6 py-2 rounded-xl w-full">Kembali ke Halaman Awal</button>
+          ${isLulus ? '' : ''}
+            <button onclick="goBack()" class="mt-6 ${isLulus ? 'bg-blue-600 hover:bg-blue-700' : 'bg-red-600 hover:bg-red-700'} text-white px-6 py-2 rounded-xl w-full">Kembali ke Halaman Awal</button>
             
             ` : ''}
         `;
