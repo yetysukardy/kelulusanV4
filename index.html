@@ -160,15 +160,15 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.
               <div class="mb-2 font-semibold text-gray-700">Pesan Motivasi:</div>
               <div class="italic text-gray-600">${isLulus ? 'Selamat! Tetap semangat untuk melanjutkan pendidikan ke jenjang berikutnya.' : 'Jangan menyerah, teruslah belajar dan berusaha untuk meraih masa depan yang lebih baik.'}</div>
             </div>
-            ${isLulus ? '<button onclick="window.print()" class="mt-4 text-sm text-green-600 underline">Cetak Bukti Kelulusan</button>' : ''}
-            <button onclick="goBack()" class="mt-6 ${isLulus ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'} text-white px-6 py-2 rounded-xl w-full">Kembali ke Halaman Awal</button>
-          </div>
-        
             ${isLulus ? `
-              <a href="${student["Link SKL"]}" target="_blank" class="block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl text-center">
+              <a href="${student["Link SKL"]}" target="_blank" class="block mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl text-center">
                 Download SKL
               </a>
               <button onclick="window.print()" class="mt-2 text-sm text-green-600 underline">Cetak Bukti Kelulusan</button>
+          </div>
+             ${isLulus ? '<button onclick="window.print()" class="mt-4 text-sm text-blue-600 underline">Cetak Bukti Kelulusan</button>' : ''}
+            <button onclick="goBack()" class="mt-6 ${isLulus ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'} text-white px-6 py-2 rounded-xl w-full">Kembali ke Halaman Awal</button>
+            
             ` : ''}
         `;
 } else {
